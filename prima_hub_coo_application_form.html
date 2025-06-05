@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima Hub COO Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #003366;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apply for COO – Prima Hub</h1>
+    <form action="https://formspree.io/f/mnqegbbz" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label for="experience">Tell us about your relevant experience:</label>
+        <textarea name="experience" rows="4" required></textarea>
+
+        <label for="vision">What’s your vision for a COO role at Prima Hub?</label>
+        <textarea name="vision" rows="4" required></textarea>
+
+        <label for="tech_understanding">How well do you understand the tech landscape in Africa?</label>
+        <select name="tech_understanding" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="beginner">Beginner</option>
+        </select>
+
+        <label for="location">Your Current Location:</label>
+        <input type="text" name="location" required>
+
+        <label for="availability">When can you start?</label>
+        <input type="text" name="availability" required>
+
+        <label for="strengths">What strengths make you the best fit?</label>
+        <textarea name="strengths" rows="3"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
